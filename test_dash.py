@@ -1,6 +1,3 @@
-# To add a new cell, type '# %%'
-# To add a new markdown cell, type '# %% [markdown]'
-# %%
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
@@ -13,7 +10,7 @@ app = dash.Dash(
 )
 
 app.layout = html.Div(children=[
-    html.H1(children='Hello World'),
+    html.H1(children='Hello Doh...'),
     html.Div(children=
         '''
         Dash, A web application framework for Python
@@ -22,12 +19,12 @@ app.layout = html.Div(children=[
         id='example_graph', 
         figure={
             'data' : [
-                        {'x' : [1, 2, 3],
-                         'y' : [4, 1, 2], 
+                        {'x' : [1, 1, 3],
+                         'y' : [4, 1, 9], 
                          'type' : 'bar',
                          'name' : 'SF'}, 
-                        {'x' : [1, 2, 3], 
-                         'y' : [2, 4, 5], 
+                        {'x' : [1, 5, 3], 
+                         'y' : [8, 4, 5], 
                          'type' : 'bar', 
                          'name' : u'Montreal'}, 
                     ], 
@@ -38,8 +35,3 @@ app.layout = html.Div(children=[
 
 if __name__ == '__main__':
     app.run_server(debug=True)
-
-
-# %%
-
-
